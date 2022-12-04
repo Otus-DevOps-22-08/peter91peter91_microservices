@@ -1,0 +1,8 @@
+REPOSITORY                            TAG       IMAGE ID       CREATED              SIZE
+peters_image_ubuntu/ubuntu-tmp-file   latest    e9ff26f01df4   About a minute ago   63.1MB
+ubuntu                                18.04     71eaf13299f4   5 weeks ago          63.1MB
+hello-world                           latest    feb5d9fea6a5   14 months ago        13.3kB
+
+Образ - это шаблон, на основе которого создается контейнер, существует отдельно и не может быть изменен.
+При создании контейнера поверх образа, добавляется слой, доступный для изменений.
+Далее мы может создадать новый образ из измененного контейнера.
