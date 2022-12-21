@@ -1,5 +1,4 @@
 # peter91peter91_microservices
-<<<<<<< HEAD
 HW-13 DOCKER-3
 
 -Описывать и собирать Docker-образы для сервисного приложения 
@@ -9,6 +8,16 @@ HW-13 DOCKER-3
 -Оптимизировать работу с Docker-образами 
 -Запуск и работа приложения на основе Docker-образов, оценка удобства запуска контейнеров при помощи 'docker run'
 
-Действия,указанные в методичке,не приведут к полноценной работе приложения. 
-Посты не будут создаваться. Обсуждение студентов ниже:
-https://otus-devops.slack.com/archives/C03S3CRKWER/p1670275065717179
+-переписали докерфайлы Dockerfile.1  ; Уменьшили размеры образов.
+
+----------------------------------------------------------------------------------------
+Действий,указанных 5 лет назад в методичке,не достаточно для полноценной работы приложения. 
+Чиним приложение.
+1. ищем в post-py/post_app.py строку: "app.db.insert({'title': title, 'link': link, 'created_at': created_at, 'votes': 0})"
+2. меняем в ней insert на insert_one
+
+
+REPOSITORY               TAG            IMAGE ID       CREATED          SIZE
+peter91peter91/post      1.0            de12d14587dd   2 minutes ago    74.2MB
+peter91peter91/ui        1.0            ebd54019e7f7   22 minutes ago   63.2MB
+peter91peter91/comment   1.0            9ed935498140   36 minutes ago   66MB
